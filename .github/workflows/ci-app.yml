@@ -6,8 +6,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
-      - uses: actions/setup-npm@v4
-      - uses: actions/setup-make@v4
       - run: make setup
       - run: make start
       - run: make test
